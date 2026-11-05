@@ -1,0 +1,25 @@
+{
+  "board": { "lanes": 5, "cols": 9, "cell": 96, "origin_x": 160, "origin_y": 112 },
+  "fx": { "coin_fall": 3.0, "hop_time": 0.6, "fade_time": 1.0 },
+  "economy": { "start_sen": 50, "sky_coin_every": 8.0, "coin_value": 25 },
+  "plants": {
+    "pisang": { "name": "Pokok Pisang", "cost": 50, "hp": 300, "coin_every": 20.0 },
+    "kelapa": { "name": "Pokok Kelapa", "cost": 100, "hp": 300, "shot_damage": 20, "shot_every": 1.5, "shot_speed": 300 },
+    "durian": { "name": "Durian", "cost": 50, "hp": 1500, "thorns": 5 }
+  },
+  "pests": {
+    "lipas":  { "name": "Lipas",  "hp": 100, "speed": 30, "bite": 10 },
+    "biawak": { "name": "Biawak", "hp": 500, "speed": 12, "bite": 25 },
+    "gagak":  { "name": "Gagak",  "hp": 150, "speed": 25, "bite": 15, "hops": 1 }
+  },
+  "waves": {
+    "first_delay": 20.0, "gap": 15.0, "spawn_every": 1.5, "seed": 2026,
+    "list": [
+      { "lipas": 3 },
+      { "lipas": 5, "gagak": 1 },
+      { "lipas": 4, "gagak": 2, "biawak": 1 },
+      { "lipas": 6, "gagak": 3, "biawak": 2 },
+      { "lipas": 10, "gagak": 4, "biawak": 3 }
+    ]
+  }
+}
